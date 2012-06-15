@@ -1,10 +1,9 @@
 <?php
-namespace CodePeople;
 /**
-Photoshow allows to insert photos from Flickr in the blog posts
+CodePeoplePhotoshow allows to insert photos from Flickr in the blog posts
 */
 
-class Photoshow {
+class CodePeoplePhotoshow {
 	
 	var $text_domain = 'photoshow';
 	
@@ -221,11 +220,11 @@ class Photoshow {
 		if($wp_query->have_posts()){
 			foreach($wp_query->posts as $post){
 				if(!empty($post->post_content)){
-					$dom = new \DOMDocument;
+					$dom = new DOMDocument;
 					$dom->preserveWhiteSpace = false;
 					$dom->loadHTML($post->post_content);
 					
-					$dom_xpath = new \DOMXpath($dom);
+					$dom_xpath = new DOMXpath($dom);
 					$filter = $dom_xpath->query('//div[class="photoshow"]');
 					if($filter && count($filter) > 0){
 						wp_enqueue_style(
