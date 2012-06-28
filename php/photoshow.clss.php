@@ -44,19 +44,6 @@ class CodePeoplePhotoshow {
 		
 		
 		$flickr_api_key = get_option('photoshow_flickr_api_key');
-		/*
-		echo '
-			<div class="wrap">
-				<form method="post" action="'.$_SERVER['REQUEST_URI'].'">
-					<h2>Photoshow</h2>
-					<h3>'.__('Enter the Flickr API Key', $this->text_domain).'</h3>
-					<input type="text" id="flickr_api_key" name="flickr_api_key" value="'.$flickr_api_key.'" />
-					<div class="submit"><input class="button-primary" type="submit" value="'.__('Update Settings', $this->text_domain).'" /></div>
-					<input type="hidden" name="photoshow_settings" id="photoshow_settings" value="true" />
-				</form>
-			</div>
-		';
-		*/	
 		echo '
 			<div class="wrap">
 				<form method="post" action="'.$_SERVER['REQUEST_URI'].'">
