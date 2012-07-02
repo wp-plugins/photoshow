@@ -60,7 +60,7 @@ class CodePeoplePhotoshow {
 							</tr>
 						</tbody>
 					</table>	
-					<h3>'.__('The next options are only available for the advanced version of Photoshow', $this->text_domain).'</h3>
+					<h3>'.__('The next options are only available for the advanced version of Photoshow', $this->text_domain).'. <a href="http://wordpress.dwbooster.com/galleries/photoshow-advanced" target="_blank">'.__('Here').'</a></h3>
 					<h3  style="color:#DDD;">'.__('Save in cache(optional)', $this->text_domain).'</h3>
 					<table class="form-table" style="color:#DDD;">
 						<tbody>
