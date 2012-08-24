@@ -40,6 +40,8 @@ if(class_exists("CodePeoplePhotoshow")){
 		add_filter('mce_css', array(&$photoshow_obj, 'addMCEStyle'));
 		add_filter('tiny_mce_before_init', array(&$photoshow_obj, 'allowDiv'));
 		$plugin = plugin_basename(__FILE__);
+		
+		add_filter('plugin_action_links_'.$plugin, array(&$photoshow_obj, 'customizationLink'));
 		add_filter("plugin_action_links_".$plugin, array(&$photoshow_obj, 'settingsLink'));
 	}
 }

@@ -28,7 +28,15 @@ class CodePeoplePhotoshow {
 		array_unshift($links, $settings_link); 
 		return $links; 
 	} // End settingsLink
- 
+	
+	/*
+		Set a link to contact page
+	*/
+	function customizationLink($links) { 
+		$settings_link = '<a href="http://wordpress.dwbooster.com/contact-us" target="_blank">'.__('Request custom changes').'</a>'; 
+		array_unshift($links, $settings_link); 
+		return $links; 
+	} // End customizationLink
  
 	/**
 		Print out the admin page
@@ -48,6 +56,8 @@ class CodePeoplePhotoshow {
 			<div class="wrap">
 				<form method="post" action="'.$_SERVER['REQUEST_URI'].'">
 					<h2>Photoshow</h2>
+					<div>'.__('For more information go to the <a href="http://wordpress.dwbooster.com/galleries/photoshow-advanced" target="_blank">Photoshow</a> plugin page').'</div>
+					
 					<table class="form-table">
 						<tbody>
 							<tr valign="top">
