@@ -1,6 +1,6 @@
 === Photoshow ===
 Contributors: codepeople
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GZX2Y9BBJKWN2
+Donate link: http://wordpress.dwbooster.com/galleries/photoshow-advanced
 Tags: gallery, images, Flickr, yql, ajax
 Requires at least: 3.0.5
 Tested up to: 3.5
