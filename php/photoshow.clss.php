@@ -157,7 +157,8 @@ class CodePeoplePhotoshow {
 	*/
 	function addMCEStyle($mce_css){
 		if ( ! empty( $mce_css ) ) $mce_css .= ',';
-		$mce_css .= plugins_url( '/photoshow/css/photoshow.admin.css');
+        
+		$mce_css .= photoshow_plugin_url.'/css/photoshow.admin.css';
 		return $mce_css;
 	} // End addMCEStyle
 	
@@ -165,7 +166,7 @@ class CodePeoplePhotoshow {
 		Set the Photoshow button in media bar over the post editor
 	*/
 	function setPhotoshowButton(){
-		print '<a href="javascript:photoshowAdmin.open();" title="'.__('Insert Flickr Image', $this->text_domain).'"><img src="'.plugins_url('/photoshow/images/photoshow.gif').'" alt="'.__('Insert Flickr Image', $this->text_domain).'" /></a>';
+		print '<a href="javascript:photoshowAdmin.open();" title="'.__('Insert Flickr Image', $this->text_domain).'"><img src="'.photoshow_plugin_url.'/images/photoshow.gif" alt="'.__('Insert Flickr Image', $this->text_domain).'" /></a>';
 	} // End setPhotoshowButton
 	
 	/**
@@ -190,7 +191,7 @@ class CodePeoplePhotoshow {
 					
 		wp_enqueue_script(
 			'admin_photoshow_script',
-			plugins_url('/photoshow/js/photoshow.admin.js'),
+			photoshow_plugin_url.'/js/photoshow.admin.js',
 			array('jquery', 'jquery-ui-dialog')
 		);
 		
@@ -226,12 +227,12 @@ class CodePeoplePhotoshow {
 					if($filter && count($filter) > 0){
 						wp_enqueue_style(
 							'photoshow_style',
-							plugins_url('/photoshow/css/photoshow.css')
+							photoshow_plugin_url.'/css/photoshow.css'
 						);
 						
 						wp_enqueue_script(
 							'photoshow_script',
-							plugins_url('/photoshow/js/photoshow.js'),
+							photoshow_plugin_url.'/js/photoshow.js',
 							array('jquery')
 						);
 						
