@@ -9,6 +9,8 @@ Description: Photoshow allows to insert images in Wordrpess posts directly from 
 
 include "php/photoshow.clss.php";
 
+define( 'photoshow_plugin_url', plugins_url( '', __FILE__ ) );
+
 if(class_exists("CodePeoplePhotoshow")){
 	$photoshow_obj = new CodePeoplePhotoshow();
 	
@@ -20,7 +22,7 @@ if(class_exists("CodePeoplePhotoshow")){
 				return; 
 			} 
 			if (function_exists('add_options_page')) { 
-				add_options_page('Photoshow', 'Photoshow', 9, basename(__FILE__), array(&$photoshow_obj, 'printAdminPage')); 
+				add_options_page('Photoshow', 'Photoshow', 'manage_options', basename(__FILE__), array(&$photoshow_obj, 'printAdminPage')); 
 			} 
 		}    
 	}
