@@ -8,7 +8,7 @@ Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Smart Image Gallery allows to insert images, and pictures, in your blog, directly from the WordPress media library, or eternal images repositories (like: Flickr, Picasa, Instagram, Facebook or Google Images ). The images are searched, and inserted, from the article edition, without importing them to the WordPress media library.
+Smart Image Gallery allows to insert images, and pictures, in your blog, directly from the WordPress media library, or eternal images repositories...
 
 == Description ==
 
