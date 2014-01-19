@@ -33,9 +33,9 @@ The base plugin, available for free from the WordPress Plugin Directory, has all
 
 **Demo of Premium Version of Plugin**
 
-[http://www.dreamweaverdownloads.com/demos/smart-image-gallery/wp-login.php](http://www.dreamweaverdownloads.com/demos/smart-image-gallery/wp-login.php "Click to access the Administration Area demo")
+[http://demos.net-factor.com/smart-image-gallery/wp-login.php](http://demos.net-factor.com/smart-image-gallery/wp-login.php "Click to access the Administration Area demo")
 
-[http://www.dreamweaverdownloads.com/demos/smart-image-gallery/](http://www.dreamweaverdownloads.com/demos/smart-image-gallery/ "Click to access the Public Page")
+[http://demos.net-factor.com/smart-image-gallery/](http://demos.net-factor.com/smart-image-gallery/ "Click to access the Public Page")
 
 
 If you want more information about this plugin, or another one, visits my website:
