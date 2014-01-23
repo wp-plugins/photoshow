@@ -134,6 +134,12 @@ class CodePeoplePhotoshow {
 			
 		?>
 		<div class="wrap">
+			<p style="border:1px solid #E6DB55;margin-bottom:10px;padding:5px;background-color: #FFFFE0;">
+				For reporting an issue or to request a customization, <a href="http://wordpress.dwbooster.com/contact-us" target="_blank">CLICK HERE</a><br />
+				If you want test the premium version of Music Store go to the following links:<br/> <a href="http://demos.net-factor.com/smart-image-gallery/wp-login.php" target="_blank">Administration area: Click to access the administration area demo</a><br/> 
+				<a href="http://demos.net-factor.com/smart-image-gallery/" target="_blank">Public page: Click to access the public website</a>
+			</p>
+			
 			<form method="post">
 				<h2><?php print PHOTOSHOW_PLUGIN_NAME; ?></h2>
 				<?php
@@ -143,6 +149,9 @@ class CodePeoplePhotoshow {
 					}
 				?>
 				<input type="hidden" name="photoshow_settings" value="true" />
+				<p style="border:1px solid #E6DB55;margin-bottom:10px;padding:5px;background-color: #FFFFE0;">
+					To obtain a copy of premium version of plugin <a href="http://wordpress.dwbooster.com/galleries/smart-image-gallery#download" target="_blank">CLICK HERE</a>
+				</p>
 				<div class="submit"><input type="submit" class="button-primary" value="<?php _e( 'Update Settings', $this->text_domain ); ?>" /></div>
 			</form>
 		</div>
