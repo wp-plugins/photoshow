@@ -136,7 +136,7 @@ class CodePeoplePhotoshow {
 		<div class="wrap">
 			<p style="border:1px solid #E6DB55;margin-bottom:10px;padding:5px;background-color: #FFFFE0;">
 				For reporting an issue or to request a customization, <a href="http://wordpress.dwbooster.com/contact-us" target="_blank">CLICK HERE</a><br />
-				If you want test the premium version of Music Store go to the following links:<br/> <a href="http://demos.net-factor.com/smart-image-gallery/wp-login.php" target="_blank">Administration area: Click to access the administration area demo</a><br/> 
+				If you want test the premium version of Smart Image Gallery go to the following links:<br/> <a href="http://demos.net-factor.com/smart-image-gallery/wp-login.php" target="_blank">Administration area: Click to access the administration area demo</a><br/> 
 				<a href="http://demos.net-factor.com/smart-image-gallery/" target="_blank">Public page: Click to access the public website</a>
 			</p>
 			
