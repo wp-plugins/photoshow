@@ -18,6 +18,9 @@ jQuery( function($){
 							<div class="photoshow-bodies">\
 								<div class="body-images">\
 									<div>'+photoshow[ 'texts' ][ 'terms' ]+'*: <input type="text" id="searchTerms" style="width:250px;" value="" /> <input type="button" value="Search" onclick="photoshowAdmin.search();" /></div>\
+									<p style="border:1px solid #E6DB55;margin-bottom:10px;padding:5px;background-color: #FFFFE0;">\
+									To obtain a copy of premium version of plugin <a href="http://wordpress.dwbooster.com/galleries/smart-image-gallery#download" target="_blank">CLICK HERE</a>\
+									</p>\
 									<div id="modulesContainer">';
 		
 		if( typeof photoshow.modules != 'undefined' )
