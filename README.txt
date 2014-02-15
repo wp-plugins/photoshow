@@ -1,7 +1,7 @@
 === Smart Image Gallery ===
 Contributors: codepeople
 Donate link: http://wordpress.dwbooster.com/galleries/photoshow-advanced
-Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images
+Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images, cloud, cloud servers
 Requires at least: 3.0.5
 Tested up to: 3.8
 Stable tag: 1.0.1
