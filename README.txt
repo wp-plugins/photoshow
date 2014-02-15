@@ -88,6 +88,10 @@ A: The plugin inserts a shortcode in the article, so will be required remove the
 
 A: Smart Image Gallery search images in general. You should check copyright of images. If you click on the image, will be loaded the original page where the image is published.
 
+= Q: Could be restricted the resulting images to an user? =
+
+A: This feature is only available for Flickr. Go to the settings page of plugin, and set the username for Flickr library.
+
 If you require more information, please visit our FAQ page in:
 
 http://wordpress.dwbooster.com/faq/photoshow-advanced
