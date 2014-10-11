@@ -1,7 +1,7 @@
 === Smart Image Gallery ===
 Contributors: codepeople
 Donate link: http://wordpress.dwbooster.com/galleries/photoshow-advanced
-Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images, cloud, cloud servers,Post,posts,page,images,admin,shortcode,plugin
+Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images, cloud, cloud servers,Google,Post,posts,page,images,admin,shortcode,plugin
 Requires at least: 3.0.5
 Tested up to: 4.0
 Stable tag: 1.0.1
@@ -107,3 +107,16 @@ http://wordpress.dwbooster.com/faq/photoshow-advanced
 7. Interface for images selection
 8. Interface for gallery settings
 9. Smart Image Gallery shortcode
+
+== Changelog ==
+
+= 1.0 =
+
+* First version released.
+
+= 1.0.1 =
+
+* Improves the plugin documentation.
+* Fixes an issue with the selection of Flickr images.
+* Corrects some issues with the jQuery framework included with the latest versions of WordPress.
+* Re-implements multiple features of the plugin. 
