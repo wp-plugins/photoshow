@@ -122,8 +122,8 @@ jQuery( function($){
 				}}
             ],
 			close:function(){
-				c.remove();
 				$(this).dialog('destroy');
+                c.remove();
 			},
 			open:function( evt, ui ){
 				var me = $( this );
