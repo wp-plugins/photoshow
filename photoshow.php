@@ -58,7 +58,7 @@ if( class_exists( "CodePeoplePhotoshow" ) )
 		register_deactivation_hook( __FILE__, array( &$photoshow_obj, 'deactivePlugin' ) );
 		
 		// Set Actions
-		add_action( 'init', array( &$photoshow_obj, 'init' ), 0 );
+		add_action( 'init', array( &$photoshow_obj, 'init' ), 1 );
 		add_action( 'admin_enqueue_scripts', array( &$photoshow_obj, 'adminScripts' ), 1 );
 		add_action( 'media_buttons', array( &$photoshow_obj, 'setPhotoshowButton' ), 100 );
 		add_action( 'wp_enqueue_scripts', array( &$photoshow_obj, 'loadPhotoshowResources' ), 100 );

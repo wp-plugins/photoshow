@@ -1,7 +1,7 @@
 === Smart Image Gallery ===
 Contributors: codepeople
 Donate link: http://wordpress.dwbooster.com/galleries/photoshow-advanced
-Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images, cloud, cloud servers,Google,Post,posts,page,images,admin,shortcode,plugin
+Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images, cloud, cloud servers,Google,Post,posts,page,images,admin,shortcode,plugin,sidebar,widget
 Requires at least: 3.0.5
 Tested up to: 4.0
 Stable tag: 1.0.1
@@ -23,6 +23,7 @@ Smart Image Gallery allows insert the selected images by separated, or as part o
 *  Allows search for images in the WordPress media library, or external images repositories
 *  Allows to display the images separately or as part of a gallery
 *  Reduces the bandwidth consumption of your server using images hosted in external servers
+*  Allows insert the gallery in the website's sidebar.
 
 The base plugin, available for free from the WordPress Plugin Directory, has all the features needed for search, and insert, images in the website's articles.
 

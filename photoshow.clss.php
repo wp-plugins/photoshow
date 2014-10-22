@@ -67,8 +67,8 @@ class CodePeoplePhotoshow {
 	function init()
 	{
 		// I18n
-		load_plugin_textdomain($this->text_domain, false, dirname(plugin_basename(__FILE__)) . '/../languages/');
-		
+		load_plugin_textdomain($this->text_domain, false, dirname(plugin_basename(__FILE__)) . '/languages/');
+        add_action( 'widgets_init', 'cpps_load_widgets' );
 		if( !empty( $_REQUEST[ 'photoshow_action' ] ) && !empty( $_REQUEST[ 'terms' ] ) )
 		{
 			$terms = $_REQUEST[ 'terms' ];
@@ -279,4 +279,63 @@ class CodePeoplePhotoshow {
 	
 	
 } // End Photoshow
+
+// ************************************** CREATE WIDGETS *********************************************/ 
+
+function cpps_load_widgets(){
+    register_widget( 'PhotoShowWidget' );
+}
+        
+/**
+ * PhotoShowWWidget Class
+ */
+class PhotoShowWidget extends WP_Widget {
+    
+    /** constructor */
+    function PhotoShowWidget() {
+        parent::WP_Widget(false, $name = 'Smart Image Gallery');	
+    }
+
+    function widget($args, $instance) {		
+        global $photoshow_obj;
+        extract( $args );
+        $title = apply_filters('widget_title', $instance['title']);
+        $gallery = $instance[ 'gallery' ];
+        
+        if( !empty( $gallery ) )
+        {
+            $str = ( $gallery[ 0 ] == "{" && $gallery[ strlen( $gallery ) - 1 ] == "}" ) ? $photoshow_obj->replaceShortcode( array(), $gallery ) : $gallery;
+            echo $before_widget;
+            if ( $title ) echo $before_title . $title . $after_title; 
+            echo $str;
+            echo $after_widget;
+        }    
+    }
+
+    function update($new_instance, $old_instance) {				
+        $instance = $old_instance;
+
+		/* Strip tags (if needed) and update the widget settings. */
+		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['gallery'] = $new_instance['gallery'];
+		return $instance;
+    }
+
+    function form( $instance ) {
+    
+        /* Set up some default widget settings. */
+		$defaults = array( 'title' => '', 'gallery' => '' );
+		$instance = wp_parse_args( (array) $instance, $defaults ); 
+        $title      = $instance[ 'title' ];
+        $gallery    = esc_textarea( $instance[ 'gallery' ] );
+        
+        ?>
+            <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
+            <p><label for="<?php echo $this->get_field_id('gallery'); ?>"><?php _e('Gallery:'); ?> <textarea style="height:250px;" class="widefat cpsig_shortcode" id="<?php echo $this->get_field_id('gallery'); ?>" name="<?php echo $this->get_field_name('gallery'); ?>"><?php echo $gallery; ?></textarea></label></p>
+            <p style="border:1px solid #F0AD4E;background:#FBE6CA;padding:10px;">Be sure to use dimensions for the gallery, that satisfy your website's sidebars</p>
+            <p><input type="button" value="Open Dialog" onclick="photoshowAdmin.open();" /></p>
+        <?php 
+    }
+
+} // class PhotoShowWidget
 ?>

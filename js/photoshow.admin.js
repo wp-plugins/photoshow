@@ -111,6 +111,11 @@ jQuery( function($){
 							{
 								window[ 'send_to_editor' ]( shortcode );
 							}
+							else
+                            {
+                                shortcode = shortcode.replace( '[smart-image-gallery]', '' ).replace( '[/smart-image-gallery]', '' );
+                                $( '.cpsig_shortcode' ).val( shortcode );
+                            }
 							$(this).dialog( "close" ); 
 						}
 					}
