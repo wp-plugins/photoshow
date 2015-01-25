@@ -26,7 +26,8 @@ class CodePeoplePhotoshow {
 					require_once $md->path.'/'.$entry.'/module.definition.php';
 
 					$module = end( $modules );
-					$lastkey = array_pop( array_keys( $modules ) );	
+					$keys = array_keys( $modules );
+					$lastkey = array_pop( $keys );	
 					if( !empty( $modules[ $lastkey ][ 'class_path' ] ) )
 					{
 						require_once $md->path.'/'.$entry.'/'.$modules[ $lastkey ][ 'class_path' ];
@@ -48,8 +49,8 @@ class CodePeoplePhotoshow {
 				if ( file_exists( $gd->path.'/'.$entry.'/gallery.definition.php' ) )
 				{
 					require_once $gd->path.'/'.$entry.'/gallery.definition.php';
-					
-					$lastkey = array_pop( array_keys( $galleries ) );	
+					$keys = array_keys( $galleries );
+					$lastkey = array_pop( $keys );	
 					$galleries[ $lastkey ][ 'dir' ] = $entry; 
 					if( !empty( $galleries[ $lastkey ][ 'class_path' ] ) )
 					{
