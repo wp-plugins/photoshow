@@ -48,22 +48,33 @@ window[ 'SwappingGallery_loadImage' ] = function( c, i )
 				timeout: 3000
 			});
 			
-			iTag.appendTo( c );
-			c.find( '.swapping-gallery-image img' )
-			 .load(
-					function( evt )
-					{
+			var format_gallery = function( evt, c )
+				{
+					if( evt.type == 'error' )
+					{	
+						jQuery( evt.target ).closest( '.swapping-gallery-image' ).remove();
+					}
+					else
+					{	
 						c.find( '.swapping-gallery-image' ).hide();
 						jQuery( evt.target ).parents( '.swapping-gallery-image' ).show();
-						setTimeout(
+					}
+					setTimeout(
 							function()
 							{
 								SwappingGallery_loadNext( c, i );
 							},
 							c.data( 'settings' )[ 'timeout' ]*1000
 						);
-					}
-				);
+					
+				};
+				
+			iTag.appendTo( c );
+			c.find( '.swapping-gallery-image img' )
+			 .error( ( function( f, c ){ 
+						return function( evt ){ f( evt, c ); }; } )( format_gallery, c ) )
+			 .load( ( function( f, c ){ 
+						return function( evt ){ f( evt, c ); }; } )( format_gallery, c ) );
 		}	
 	};
 

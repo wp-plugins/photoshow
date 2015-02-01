@@ -48,7 +48,6 @@ window[ 'single_output' ] = function( configObj )
 					if( settings[ 'author' ] && typeof configObj[ 'images' ][ i ][ 'author' ] != 'undefined'  && !/^\s*$/.test( configObj[ 'images' ][ i ][ 'author' ] ) )
 					{
 						var author = configObj[ 'images' ][ i ][ 'author' ];
-						console.log( author );
 						author = author.replace( '"', '\"');
 						alt += ' [' + author + ']';
 						figcaption += ' [' + author + ']';
