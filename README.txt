@@ -4,7 +4,7 @@ Donate link: http://wordpress.dwbooster.com/galleries/photoshow-advanced
 Tags: gallery, image, image gallery, album, photo, photoalbum, photogallery, pictures, Flickr, Picasa, Instagram, Facebook, Google Images, cloud, cloud servers,Google,Post,posts,page,images,admin,shortcode,plugin,sidebar,widget
 Requires at least: 3.0.5
 Tested up to: 4.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -121,3 +121,15 @@ http://wordpress.dwbooster.com/faq/photoshow-advanced
 * Fixes an issue with the selection of Flickr images.
 * Corrects some issues with the jQuery framework included with the latest versions of WordPress.
 * Re-implements multiple features of the plugin. 
+
+= 1.0.2 =
+
+* Uses the classes constructor of PHP5 in the Widgets creation
+
+== Upgrade Notice ==
+
+= 1.0.2 =
+
+* Uses the classes constructor of PHP5 in the Widgets creation
+
+Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support

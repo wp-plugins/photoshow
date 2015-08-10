@@ -2,7 +2,7 @@
 /*  
 Plugin Name: Smart Image Gallery
 Plugin URI: http://wordpress.dwbooster.com/galleries/photoshow-advanced
-Version: 1.0.1
+Version: 1.0.2
 Author: <a href="http://www.codepeople.net">CodePeople</a>
 Description: Smart Image Gallery allows to insert images, and pictures, in your blog, directly from the WordPress media library, or eternal images repositories (like: Flickr, Picasa, Instagram, Facebook or Google Images ). The images are searched, and inserted, from the article edition, without importing them to the WordPress media library.
 */

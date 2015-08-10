@@ -63,14 +63,14 @@ class CodePeoplePhotoshow {
         }
 		
 		$this->galleries = $galleries;
+		add_action( 'widgets_init', 'cpps_load_widgets' );
 	}
 
 	function init()
 	{
 		// I18n
 		load_plugin_textdomain($this->text_domain, false, dirname(plugin_basename(__FILE__)) . '/languages/');
-        add_action( 'widgets_init', 'cpps_load_widgets' );
-		if( !empty( $_REQUEST[ 'photoshow_action' ] ) && !empty( $_REQUEST[ 'terms' ] ) )
+        if( !empty( $_REQUEST[ 'photoshow_action' ] ) && !empty( $_REQUEST[ 'terms' ] ) )
 		{
 			$terms = $_REQUEST[ 'terms' ];
 			switch( $_REQUEST[ 'photoshow_action' ] )
@@ -293,8 +293,8 @@ function cpps_load_widgets(){
 class PhotoShowWidget extends WP_Widget {
     
     /** constructor */
-    function PhotoShowWidget() {
-        parent::WP_Widget(false, $name = 'Smart Image Gallery');	
+    function __construct() {
+        parent::__construct(false, $name = 'Smart Image Gallery');	
     }
 
     function widget($args, $instance) {		
